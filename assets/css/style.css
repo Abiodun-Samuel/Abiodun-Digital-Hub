@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #212121;
   overflow-x: hidden;
   background: #f5f5f5;
 }
@@ -109,15 +109,15 @@ a:hover {
     height: 40px;
   }
   .navbar {
-    height: 65px;
+    height: 55px;
     padding: 0px 15px;
     box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.15);
   }
   .navbar-nav {
     position: absolute;
     left: -100%;
-    height: 550px;
-    top: 65px;
+    height: 580px;
+    top: 55px;
     width: 65%;
     background-color: #f5f5f5;
     padding-top: 0px;
@@ -151,17 +151,6 @@ a:hover {
   .navbar .more-links {
     display: block;
   }
-  .sticky {
-    width: 100%;
-    height: 55px;
-    transition: 450ms;
-    padding: 0px 15px;
-  }
-  .sticky .navbar-nav {
-    height: 550px;
-    top: 55px;
-    transition: 450ms;
-  }
 }
 #header .btn-head {
   font-family: "Poppins", sans-serif;
@@ -177,7 +166,19 @@ a:hover {
   border: 2px solid #2196f3;
   background: inherit;
 }
-#header .get-started-btn:hover {
+#header .btn-head:hover {
+  background: #2196f3;
+  color: #f8f9fa;
+}
+#header .get-quote-btn {
+  color: #2196f3;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+#header .get-quote-btn:hover {
   background: #2196f3;
   color: #f8f9fa;
 }
@@ -320,7 +321,7 @@ a:hover {
   margin: -25px auto;
   border-radius: 10px;
   background: #f8f9fa;
-  box-shadow: 5px 5px 10px #c7c7c7, -13px -13px 39px transparent;
+  box-shadow: -2px -2px 10px #dddedf, 15px 15px 35px transparent;
 }
 .comp-name h3 {
   font-family: "Sofia", cursive;
@@ -361,17 +362,13 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f9f8ff;
-}
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -383,15 +380,15 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
-  height: 3px;
-  background: #5846f9;
-  bottom: 0;
+  width: 55px;
+  height: 4px;
+  background: #2196f3;
+  bottom: 010px;
   left: calc(50% - 25px);
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin: 10px 0px;
 }
 
 /*--------------------------------------------------------------
@@ -399,13 +396,14 @@ section {
 --------------------------------------------------------------*/
 
 .about {
-  padding: 120px 0;
+  padding: 110px 0;
 }
 
 .about .content h3 {
   font-weight: 600;
-  font-size: 32px;
-  color: #2c4964;
+  font-size: 35px;
+  color: #2196f3;
+  margin: 5px 0px 15px 0px;
 }
 
 .about .content ul {
@@ -415,12 +413,7 @@ section {
 
 .about .content ul li {
   padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #5846f9;
+  margin: 10px 0px;
 }
 
 .about .content p:last-child {
@@ -436,11 +429,10 @@ section {
   padding: 10px 25px 10px 25px;
   border-radius: 5px;
   transition: 0.5s;
-  color: #fff;
-  background: linear-gradient(45deg, #5846f9 0%, #2196f3 100%);
+  color: #f8f9fa;
+  background: #2196f3;
   position: relative;
 }
-
 .about .content .read-more:hover {
   background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
 }
@@ -460,22 +452,13 @@ section {
   background-size: cover;
   background-position: center center;
 }
-.features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
-
-.features .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #5846f9;
+.features .icon-box svg {
+  display: inline;
 }
 
 .features .icon-box p {
   font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
+  color: #757575;
 }
 
 .features .image {
@@ -501,11 +484,10 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #fff;
+  color: #f8f9fa;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
@@ -1238,6 +1220,20 @@ section {
   transition: 450ms;
   color: #212121;
   background-color: #ffffff;
+}
+#contact input::-webkit-outer-spin-button,
+#contact input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#contact ::-webkit-input-placeholder,
+#contact ::-ms-input-placeholder,
+#contact ::placeholder {
+  color: #ff4081;
 }
 
 #contact .container .row .contact .form button[type="submit"] {
