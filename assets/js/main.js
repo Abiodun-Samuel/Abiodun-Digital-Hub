@@ -18,7 +18,7 @@
     );
     return false;
   });
-  
+
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
@@ -139,9 +139,8 @@ var mySwiper = new Swiper(".swiper-container", {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".btn-head", {
-  duration: 2,
+  duration: 2.5,
   opacity: 1,
-  x: 48,
   scrollTrigger: {
     trigger: ".about",
     scrub: true,

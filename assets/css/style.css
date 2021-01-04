@@ -193,8 +193,8 @@ a:hover {
   height: 100%;
   background: -webkit-linear-gradient(
       -15deg,
-      transparent 50%,
-      rgba(33, 150, 243, 0.9) 50%
+      #f5f5f5 50%,
+      rgba(33, 150, 243, 0.8) 50%
     ),
     url(../img/hero-bg.jpg) no-repeat;
   background-size: cover;
@@ -220,10 +220,11 @@ a:hover {
   font-family: "Poppins", sans-serif;
   margin: 10px 0 0 0;
   font-size: 26px;
-  color: #ed553b;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.5px;
+  color: #212121;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
 }
 
 #hero .btn-get-started {
@@ -254,8 +255,8 @@ a:hover {
     text-align: center;
     background: -webkit-linear-gradient(
         85deg,
-        transparent 50%,
-        rgba(33, 150, 243, 0.9) 50%
+        #f5f5f5 50%,
+        rgba(33, 150, 243, 0.8) 50%
       ),
       url(../img/hero-bg.jpg) no-repeat;
     background-size: cover;
@@ -272,6 +273,9 @@ a:hover {
   }
   #hero .third img {
     width: 60%;
+  }
+  #hero h1 {
+    font-size: ;
   }
 }
 @media (max-width: 768px) {
