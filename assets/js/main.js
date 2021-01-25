@@ -1,22 +1,24 @@
 !(function ($) {
-  "use strict";
+  ("use strict");
 
-  // Back to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
-  });
-  $(".back-to-top").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      1000
-    );
-    return false;
+  // back to the top button
+  $(document).ready(function () {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 100) {
+        $("#back-to-top").fadeIn();
+      } else {
+        $("#back-to-top").fadeOut();
+      }
+    });
+    $("#back-to-top").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
+      return false;
+    });
   });
 
   // jQuery counterUp
@@ -129,6 +131,7 @@ var mySwiper = new Swiper(".swiper-container", {
   loop: true,
   autoplay: { delay: 400 },
   speed: 1000,
+  // spaceBetween: 30,
   effect: "cube",
   cubeEffect: {
     slideShadows: false,
